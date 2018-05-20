@@ -1,0 +1,12 @@
+/* pages/welcome/welcome.wxss */
+.image_box{
+  height:100%;
+  width:100%;
+  position: absolute;
+}
+
+.image{
+  height:100%;
+  width:100%;
+  position: absolute;
+}

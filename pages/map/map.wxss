@@ -1,0 +1,262 @@
+/* pages/map/map.wxss */
+.image_box{
+  height:100%;
+  width:100%;
+  position: absolute;
+  z-index: 8000;
+}
+
+.image{
+  position: absolute;
+  height:100%;
+  width:100%;
+}
+
+.image_question{
+  height:250rpx;
+  width:100%;
+}
+
+.image_icon{
+  width:100%;
+  height:600rpx;
+}
+
+.button_box{
+  padding-top:20rpx;
+  right: 0;
+  height:100rpx;
+  width:100%;
+  position: absolute;
+  z-index: 9000;
+}
+.user_image_1{
+  position: absolute;
+  left:300rpx;
+  width:150rpx;
+  height:150rpx;
+  margin-right:5rpx;
+  float: right;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 150rpx 150rpx;
+}
+.user_button_1{
+  position: absolute;
+  left:300rpx;
+  width:150rpx;
+  height:150rpx;
+  margin-right:5rpx;
+  float: right;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 150rpx 150rpx;
+  opacity: 0;
+}
+
+.user_button{
+  width:300rpx;
+  height:110rpx;
+  margin-top:20rpx;
+  font-size: 40rpx;
+  font-family: YouYuan;
+  line-height: 110rpx;
+  float: right;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 100rpx 100rpx;
+  border-radius: 0 36rpx 36rpx 0;
+}
+
+.animal_image_1{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 90rpx;
+  top: 200rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+}
+
+.animal_box_1{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 90rpx;
+  top: 200rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+  opacity: 0;
+}
+
+.animal_image_2{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 500rpx;
+  top: 300rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+}
+
+.animal_box_2{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 500rpx;
+  top: 300rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+  opacity: 0;
+}
+
+.animal_image_3{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 400rpx;
+  top: 700rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+}
+
+.animal_box_3{
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  left: 400rpx;
+  top: 700rpx;
+  z-index: 9000;
+  background-repeat:no-repeat;
+  border:none;
+  background-size: 200rpx 200rpx;
+  opacity: 0;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 600rpx;
+  height:900rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -450rpx 75rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 30rpx;
+  padding-bottom:20rpx;
+  font-size: 60rpx;
+  color: #030303;
+  text-align: center;
+}
+.modal-notice{
+  color:#666;
+  text-align:center;
+  padding:0;
+}
+
+.modal-content {
+  padding-left: 20rpx;
+  padding-right:20rpx;
+  padding-bottom:5rpx;
+  height: 620rpx;
+}
+
+.modal-footer {
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 100%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 100%;
+  color: #1E90FF;
+  text-align: center;
+}
+
+.a{
+  height:200rpx;
+  width:200rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+}
+.b{
+  width:200rpx;
+  text-align: center;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+.image_a{
+  width:200rpx;
+  height:200rpx;
+}
+.line{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.unit{
+  margin-left:5rpx;
+  height:200rpx;
+  width:200rpx;
+  line-height: 200rpx;
+}
+.unit_name{
+  margin-top:50rpx;
+  height:200rpx;
+  width:400rpx;
+  text-align: center;
+  line-height: 200rpx;
+  font-size:80rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.image_f{
+  width:200rpx;
+  height:200rpx;
+}
+.image_t{
+  margin-left:10rpx;
+  width:100rpx;
+  height:100rpx;
+}

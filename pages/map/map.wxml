@@ -1,0 +1,98 @@
+<!--pages/map/map.wxml-->
+
+<view>
+<div class='map_box'>
+  <div class='button_box'>
+    <button class='user_button' bindtap='openrank'>能量值：{{energynum}}</button>
+    <image class='user_image_1' src='../../src/img/icon.png' mode="aspectFill"></image>
+    <button class='user_button_1' bindtap='openmenu'></button>    
+  </div>
+  <image class='animal_image_1' src="../../src/img/animal1.png" mode="aspectFill" wx:if="{{button1}}"></image>
+  <button class='animal_box_1' id='1' bindtap='openAnimal' wx:if="{{button1}}"></button>
+  <image class='animal_image_2' src="../../src/img/animal2.png" mode="aspectFill" wx:if="{{button2}}"></image>
+  <button class='animal_box_2' id='2' bindtap='openAnimal' wx:if="{{button2}}"></button>
+  <image class='animal_image_3' src="../../src/img/animal3.png" mode="aspectFill" wx:if="{{button3}}"></image>
+  <button class='animal_box_3' id='3' bindtap='openAnimal' wx:if="{{button3}}"></button>
+  <div class='image_box'>
+    <image class="image" src="../../src/img/maps.png" mode="aspectFill"></image>
+  </div>
+</div>
+</view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">{{currentName}}</view>
+  <view class="modal-notice"> 题目：{{current_step + 1}}/3  分数：{{score}}</view>
+  <view class="modal-content">
+    <image class="image_question" src='{{url}}' mode="aspectFill"></image>
+    <view class="modal-question">{{question}}</view>
+    <view class="modal-answer" wx:for='{{answer}}'>
+      <button id='{{index}}' bindtap='doAnswer'>{{item}}</button>
+    </view>
+    <view class="modal-tips">{{tips}}</view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="skipNext" hidden='{{buttonHidden}}'>我知道了</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal_2" catchtouchmove="preventTouchMove" wx:if="{{showIconModal}}"></view>
+<view class="modal-dialog" wx:if="{{showIconModal}}">
+  <image class="image_icon" src='../../src/img/icon.png' mode="aspectFill"></image>
+  <view class="box">
+    <view class="a">
+      <image class="image_a" src='../../src/img/animal1.png' mode="aspectFill"></image>
+    </view>
+    <view class="a">
+      <image class="image_a" src='../../src/img/animal2.png' mode="aspectFill"></image>
+    </view>
+    <view class="a">
+      <image class="image_a" src='../../src/img/animal3.png' mode="aspectFill"></image>
+    </view>
+  </view>
+  <view class="box">
+    <view class="b">300</view>
+    <view class="b">100</view>
+    <view class="b">200</view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal_3" catchtouchmove="preventTouchMove" wx:if="{{showRankModal}}"></view>
+<view class="modal-dialog" wx:if="{{showRankModal}}">
+  <view class="modal-title">排行榜</view>
+  <view class="lbox">
+  <view class="line">
+  <view class="unit">
+    <image class="image_f" src="../../src/img/rank1.png" mode="aspectFill"></image>
+  </view>
+  <view class="unit_name">
+    <image class="image_t" src="../../src/img/animal1.png" mode="aspectFill"></image>
+    <image class="image_t" src="../../src/img/animal2.png" mode="aspectFill"></image>
+    <image class="image_t" src="../../src/img/animal3.png" mode="aspectFill"></image>
+  </view>
+  </view>
+  <view class="line">
+  <view class="unit">
+    <image class="image_f" src="../../src/img/rank2.png" mode="aspectFill"></image>
+  </view>
+  <view class="unit_name">
+    <image class="image_t" src="../../src/img/animal1.png" mode="aspectFill"></image>
+  </view>
+  </view>
+  <view class="line">
+  <view class="unit">
+    <image class="image_f" src="../../src/img/rank3.png" mode="aspectFill"></image>
+  </view>
+  <view class="unit_name">
+    <image class="image_t" src="../../src/img/animal1.png" mode="aspectFill"></image>
+    <image class="image_t" src="../../src/img/animal2.png" mode="aspectFill"></image>
+  </view>
+  </view>
+  </view>
+</view>
+
+<view class="modal-mask" bindtap="hideModal_4" catchtouchmove="preventTouchMove" wx:if="{{showShortModal}}"></view>
+<view class="modal-dialog" wx:if="{{showShortModal}}">
+  <view class="modal-title">发现{{findname}}!</view>
+  <image class="image_icon" src="{{findurl}}" mode="aspectFill"></image>
+  <view class="modal-short">这是一大大大大大大大大大大大大大大大大大大大大大大大大大大段文字{{}}</view>
+</view>

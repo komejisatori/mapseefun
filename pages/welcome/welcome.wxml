@@ -1,0 +1,4 @@
+<!--pages/welcome/welcome.wxml-->
+<div class='image_box'>
+  <image class="image" src="../../src/img/logo.png" mode="aspectFit"></image> 
+</div>

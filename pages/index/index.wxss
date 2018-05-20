@@ -1,0 +1,6 @@
+/* pages/index/index.wxss */
+.image{
+  position: absolute;
+  height:100%;
+  width:100%;
+}
